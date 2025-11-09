@@ -1,9 +1,19 @@
 HELP.md
+application-local.properties
+application-devSub.properties
 .gradle
-build/
+**/.gradle
+**/.gradle/buildOutputCleanup/cache.properties
+.history
+**/build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+**/backup/
+**/bin/
+**/logs/
+# **/images/
+**/out/
 
 ### STS ###
 .apt_generated
@@ -35,3 +45,34 @@ out/
 
 ### VS Code ###
 .vscode/
+**/logs/**
+**/uploadedFiles/**
+/logs/idas.log
+# !*.properties
+
+### AdminLTE ###
+/src/**/AdminLTE/
+/src/**/bootstrap-5.3.0/
+/src/**/jstree/
+/src/**/jstree-bootstrap-theme/
+/src/**/*.1
+/src/**/*.2
+/docs/**/*.png
+
+### mimsc ###
+**/*.txt
+**/*.out
+**/*.pid
+**/*.log
+**/*.zip
+**/*.gz
+**/bin/**
+**/build/**
+**/logs/**
+**/uploadedFiles/**
+**/backup/**
+**/*.old/**
+/docs/**/*.png
+settings.gradle
+src/main/java/com/dreamsecurity/idaas/database/DataBaseConfigLocal
+src/main/java/com/dreamsecurity/idaas/session/redis/RedisConfigDev.java
